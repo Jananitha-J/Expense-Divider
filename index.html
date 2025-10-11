@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Bill Splitter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Bill Splitter</h1>
+
+    <form id="participantForm">
+      <input type="text" id="newParticipant" placeholder="Add participant name" />
+      <button type="submit">Add Person</button>
+    </form>
+
+    <form id="expenseForm">
+      <select id="payerSelect" required></select>
+      <input type="number" id="amount" placeholder="Amount" required />
+
+      <div id="participantCheckboxes"></div>
+
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <div id="expenseList"></div>
+    <div id="summary"></div>
+  </div>
